@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Hello, user!</h1>
+
+    <h1>Campuses:</h1>
+    <h3>Post campus:</h3>
+    <form id="inputFormCampus">
+            <input type="text" id="inputLineCampusName" placeholder="Input campus name...">
+            <input type="text" id="inputLineCampusImageURL" placeholder="Input campus imageURL...">
+            <input type="text" id="inputLineCampusAddress" placeholder="Input campus address...">
+            <input type="text" id="inputLineCampusDescription" placeholder="Input campus descriptio...">
+            <button type="submit">Send</button>
+    </form><br/>
+
+    <h3>Get all campuses:</h3>
+    <button onclick="doGetCampuses()">Show campuses</button>
+
+    <button onclick="clearAllCampuses()">Clear Campuses</button>
+
+    <p id="resultDataCampus"></p><br/>
+
+    <h3>Get particular campus with its students:</h3>
+    <form id="inputFormCampusParticular">
+        <input type="text" id="inputLineCampusID" placeholder="Input campus ID...">
+        <button type="submit">Send</button>
+    </form><br/>
+    <button onclick="clearParCampus()">Clear the following campus:</button>
+    <p id="resultDataFromCampus"></p><br/>
+    <p id="resultDataParCampus"></p><br/>
+    
+
+
+    <h1>Students:</h1>
+    <h3>Post student:</h3>
+    <form id="inputFormStudent">
+            <input type="text" id="inputLineStudentFName" placeholder="Input student's first name...">
+            <input type="text" id="inputLineStudentLName" placeholder="Input student's last name...">
+            <input type="text" id="inputLineStudentEmail" placeholder="Input student's email...">
+            <input type="text" id="inputLineStudentImageURL" placeholder="Input student imageURL...">            
+            <input type="text" id="inputLineStudentGPA" placeholder="Input student GPA...">
+            <input type="text" id="inputLineStudentCampus" placeholder="Input student's campus ID'...">
+            <button type="submit">Send</button>
+    </form><br/>
+
+    <h3>Get all students:</h3>
+    <button onclick="doGetStudents()">Show studens</button>
+
+    <button onclick="clearAllStudents()">Clear students</button>
+
+    <p id="resultDataStudent"></p><br/>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="codeForHTML.js"></script>
+    
+
+</body>
+</html>
+
+
